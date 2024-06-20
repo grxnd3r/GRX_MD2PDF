@@ -3,7 +3,7 @@ class MarkdownParser {
     constructor() 
     {
         this.lines = [];
-        console.log('MarkdownParser constructor');
+        console.log('MarkdownParser created');
     }
 }
 

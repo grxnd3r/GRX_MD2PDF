@@ -5,11 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD2PDF</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/Common.style.css">
 </head>
+
 <body>
+    <!-------------->
+    <!-- MAIN APP -->
+    <!-------------->
     <div id="app">
-        <h1>Hello from GRXND3R !</h1>
+        
+        <div id="main-content">
+            <div id="navbar">
+    
+            </div>
+            <div id="content">
+                <div id="editor">
+                    <textarea id="editor-text" class="form-control" spellcheck="false" placeholder="# An interesting title">
+
+                    </textarea>
+                </div>
+                <div id="preview-container">
+                    <div id="preview">
+
+                    </div>
+                </div>
+            </div>
+            <div id="toolbox">
+    
+            </div>
+        </div>
+
     </div>
+
+
+
+    <!--------------->
+    <!--- scripts --->
+    <!--------------->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./src/renderer.js"></script>
+    <script>
+        
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,126 @@
+/* FONTS */
+@font-face {
+    font-family: 'Consolas';
+    src: local('Consolas'),
+         local('Consolas Regular'),
+         local('Consolas-Bold');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Formatting */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#app {
+    height: 100%;
+    width: 100%;
+}
+/* /Formatting/ */
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1f2430;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+    border: 3px solid #1f2430;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Container to fit all the content */
+#main-content
+{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navbar */
+#main-content #navbar {
+    width: 300px;
+    height: 100%;
+    background-color: #242936;
+}
+
+/* Content */
+#main-content #content {
+    flex: 1;
+    height: 100%;
+    background-color: #1f2430;
+    display: flex;
+    flex-direction: row;
+}
+
+#main-content #content #editor {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content #content #editor #editor-text {
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
+    background-color: #242936;
+    color: #fff;
+    border: 2px solid transparent; /* Set initial border */
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Consolas', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: none; /* Disable resizing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    outline: none; /* Remove default outline on focus */
+    box-sizing: border-box; /* Include border in element's size */
+}
+
+#main-content #content #editor #editor-text:focus {
+    border-color: #888;
+    box-shadow: 0 0 10px rgba(136, 136, 136, 0.5);
+}
+
+#main-content #content #preview-container {
+    flex: 1;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content #content #preview-container #preview {
+    height: calc(100% - 80px);
+    width: calc(100% - 80px);
+    background-color: #242936;
+}
+
+/* Toolbox */
+#main-content #toolbox {
+    width: 300px;
+    height: 100%;
+    background-color: #242936;
+}
