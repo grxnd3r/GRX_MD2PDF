@@ -10,7 +10,5 @@ function main()
     const parser = new MarkdownParser(fileContent);
 }
 
-
-
 // KEEP IT AT THE END OF THE FILE
 main();

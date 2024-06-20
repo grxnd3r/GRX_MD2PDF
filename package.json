@@ -2,10 +2,10 @@
   "name": "grx_md2pdf",
   "version": "1.0.0",
   "description": "**MD2PDF** is a Node.js script designed to convert Markdown files into PDF format. This utility is perfect for those who need to generate professional-looking PDFs from Markdown documents quickly and efficiently.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/main.js"
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/grxnd3r/GRX_MD2PDF/issues"
   },
-  "homepage": "https://github.com/grxnd3r/GRX_MD2PDF#readme"
+  "homepage": "https://github.com/grxnd3r/GRX_MD2PDF#readme",
+  "devDependencies": {
+    "electron": "^31.0.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  }
 }

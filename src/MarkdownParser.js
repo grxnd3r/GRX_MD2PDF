@@ -7,7 +7,7 @@ class MarkdownParser {
     }
 }
 
-class Line 
+class Line
 {
     constructor(text) 
     {
