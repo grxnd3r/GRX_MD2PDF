@@ -6,6 +6,8 @@
     <title>MD2PDF</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/Common.style.css">
+    <link rel="stylesheet" href="./styles/Markdown.style.css">
+    <link rel="stylesheet" href="./styles/Toolbox.style.css">
 </head>
 
 <body>
@@ -16,7 +18,7 @@
         
         <div id="main-content">
             <div id="navbar">
-    
+                navbar
             </div>
             <div id="content">
                 <div id="editor">
@@ -31,7 +33,32 @@
                 </div>
             </div>
             <div id="toolbox">
-    
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Global Settings
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                {{css settings}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Specific Settings
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                {{css settings}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
